@@ -30,7 +30,7 @@ class Artist
 
 
   def self.find_or_create_by_name (name)
-    find_by(name) || create!(name)
+    @@all_artists ||= name ? name = Artist.new(name) : nil
   end
 
 
