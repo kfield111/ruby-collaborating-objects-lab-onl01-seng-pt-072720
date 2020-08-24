@@ -36,6 +36,7 @@ class Artist
       self
     elsif self.all.detect {|temp| temp.name == nil}
       artist = self.new(name)
+      @name = name
       artist
     end
   end
