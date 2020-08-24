@@ -30,8 +30,12 @@ class Artist
 
 
   def self.find_or_create_by_name (name)
-    @@all_artists ||= name ? name = Artist.new(name) : self
-  end
+    @@all_artists.each do |temp|
+      if @@all_artists.include? (temp.name)
+        temp
+      else
+        temp = Artist.new (temp)  
+    end
 
 
 
