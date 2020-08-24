@@ -28,7 +28,6 @@ def self.new_by_filename (filename)
   song_data << filename.split("-")
   binding.pry
 
-  Song.new(filename)
 end
 
 
