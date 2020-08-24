@@ -15,7 +15,7 @@ class Artist
   end
 
   def self.all
-    @@all_artists
+    @@all_artists.name
   end
 
 end
