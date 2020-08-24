@@ -9,7 +9,7 @@ class MP3Importer
   end
 
   def files
-    filepath = path.split("/").join
+    Dir["spec/fixtures/mp3s/*"
     binding.pry
   end
 
