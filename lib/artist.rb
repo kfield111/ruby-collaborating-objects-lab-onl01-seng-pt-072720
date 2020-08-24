@@ -33,6 +33,7 @@ class Artist
     @@all_artists.each do |temp|
       if @@all_artists.include? (temp.name)
         temp
+        binding.pry
       else
         add_song
       end
