@@ -34,14 +34,13 @@ class Artist
     self.all.detect {|temp| temp.name == name}
   end
 
+  def create_by_name (name)
+    name = Artist.new(name)
+  end
+
 
   def self.find_or_create_by_name (name)
 
-    else
-      artist = self.new(name)
-      @name = name
-      artist
-    end
   end
 
 
