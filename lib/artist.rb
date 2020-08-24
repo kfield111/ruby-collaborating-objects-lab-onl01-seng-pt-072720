@@ -37,6 +37,8 @@ class Artist
         self
       else
         @@all_artists << temp
+      end
+    end
   end
 
 
