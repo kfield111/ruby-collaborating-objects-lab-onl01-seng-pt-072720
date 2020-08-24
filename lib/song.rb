@@ -31,7 +31,6 @@ def self.new_by_filename (filename)
   new_song.artist = artist
   new_song.genre = genre
   new_song
-  binding.pry
 end
 
 
