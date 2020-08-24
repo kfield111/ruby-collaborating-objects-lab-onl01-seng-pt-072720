@@ -32,7 +32,7 @@ class Artist
 
 
   def self.find_or_create_by_name (name)
-    @@all_artists.detect do {|temp| temp.name} ? temp : add_song
+    @@all_artists.detect do {|temp| temp.name}
   end
 
 
