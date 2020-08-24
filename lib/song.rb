@@ -9,8 +9,8 @@ def initialize (name)
 end
 
 def save
-  @@all_songs << selfend
-  
+  @@all_songs << self
+end
 
 
 def self.all
