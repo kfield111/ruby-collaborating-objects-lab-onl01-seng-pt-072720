@@ -1,3 +1,5 @@
+require 'pry'
+
 class MP3Importer
   attr_accessor :path
 
@@ -8,6 +10,7 @@ class MP3Importer
 
   def files
     filepath = path.chomp(".mp3").split(" - ")
+    binding.pry
   end
 
 
