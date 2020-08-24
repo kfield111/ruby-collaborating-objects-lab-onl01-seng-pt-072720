@@ -32,7 +32,11 @@ class Artist
 
 
   def self.find_or_create_by_name (name)
-    self.all.detect {|temp| temp.name == name}
+    if self.all.detect {|temp| temp.name == name}
+      self
+    else
+      artist = Artist.new(name)
+      artist
   end
 
 
