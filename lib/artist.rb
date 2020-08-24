@@ -30,7 +30,7 @@ class Artist
     Song.all.select {|temp| temp.artist == self}
   end
 
-  def find_by_name(name)
+  def self.find_by_name(name)
     self.all.detect {|temp| temp.name == name}
   end
 
