@@ -48,8 +48,6 @@ class Artist
     songs.each {|temp| "#{temp.name}"
   end
 
-  
-  end
 
 
 
