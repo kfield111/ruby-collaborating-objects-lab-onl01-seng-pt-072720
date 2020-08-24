@@ -36,7 +36,7 @@ class Artist
       if temp.name == name
         self
       else
-        @@all_artists << temp
+        @@all << temp
       end
     end
   end
