@@ -36,6 +36,7 @@ class Artist
       self
     else
       Artist.new(name)
+    end
   end
 
 
