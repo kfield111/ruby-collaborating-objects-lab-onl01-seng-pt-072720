@@ -24,7 +24,10 @@ def artist_name= (name)
 end
 
 def self.new_by_filename (filename)
-self.artist_name
+  song_data = []
+  song_data << filename.split("-")
+
+  Song.new(filename)
 end
 
 
