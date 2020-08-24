@@ -34,7 +34,7 @@ class Artist
     self.all.detect {|temp| temp.name == name}
   end
 
-  def create_by_name (name)
+  def self.create_by_name (name)
     name = Artist.new(name)
   end
 
