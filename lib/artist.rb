@@ -30,10 +30,13 @@ class Artist
     Song.all.select {|temp| temp.artist == self}
   end
 
+  def find_by_name(name)
+    self.all.detect {|temp| temp.name == name}
+  end
+
 
   def self.find_or_create_by_name (name)
-    if self.all.detect {|temp| temp.name == name}
-      temp
+
     else
       artist = self.new(name)
       @name = name
