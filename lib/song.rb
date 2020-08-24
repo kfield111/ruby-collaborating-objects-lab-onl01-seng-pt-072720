@@ -26,6 +26,7 @@ end
 def self.new_by_filename (filename)
   song_data = []
   song_data << filename.split("-")
+  pry
 
   Song.new(filename)
 end
