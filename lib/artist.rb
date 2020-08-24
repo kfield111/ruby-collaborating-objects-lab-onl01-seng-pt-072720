@@ -36,7 +36,7 @@ class Artist
       if temp.name == name
         temp
       else
-        @@all << temp
+        @@all << add_song
       end
     end
   end
