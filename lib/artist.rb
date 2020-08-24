@@ -34,7 +34,7 @@ class Artist
   def self.find_or_create_by_name (name)
     @@all.detect do |temp|
       if temp.name == name
-        self
+        temp
       else
         @@all << temp
       end
