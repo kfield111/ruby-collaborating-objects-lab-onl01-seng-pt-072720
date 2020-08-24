@@ -35,8 +35,9 @@ class Artist
         temp
       else
         temp = Artist.new (temp)
-      end  
+      end
     end
+  end
 
 
 
