@@ -39,7 +39,6 @@ class Artist
       @name = name
       artist
     end
-
   end
 
 
