@@ -24,7 +24,6 @@ def artist_name= (name)
 end
 
 def self.new_by_filename (filename)
-  song_data = []
   song_data << filename.split(" - ")
   artist = song_data[0]
   title = song_data[1]
