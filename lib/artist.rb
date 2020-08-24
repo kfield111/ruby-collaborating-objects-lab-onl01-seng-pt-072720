@@ -33,7 +33,6 @@ class Artist
     @@all_artists ||= name
       name = Artist.new(name)
     end
-  end
 
 
 
