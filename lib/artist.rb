@@ -39,6 +39,7 @@ class Artist
         @@all << temp
       end
     end
+    @@all
   end
 
 
