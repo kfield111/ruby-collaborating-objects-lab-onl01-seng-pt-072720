@@ -36,7 +36,7 @@ class Artist
       if temp.name == name
         temp
       else
-        @@all << Artist.new(name)
+        @@all << name = Artist.new(name)
       end
     end
   end
