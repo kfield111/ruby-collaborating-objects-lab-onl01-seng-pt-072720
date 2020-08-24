@@ -24,7 +24,6 @@ def artist_name= (name)
 end
 
 def new_by_filename (filename)
-Song.new(filename)
 artist_name
 end
 
