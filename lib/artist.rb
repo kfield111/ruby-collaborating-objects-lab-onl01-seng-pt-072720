@@ -32,14 +32,7 @@ class Artist
 
 
   def self.find_or_create_by_name (name)
-    @@all_artists.each do |temp|
-      if @@all_artists.include? (temp.name)
-        temp
-        binding.pry
-      else
-        add_song
-      end
-    end
+    @@all_artists.detect do {|temp| temp.name}
   end
 
 
