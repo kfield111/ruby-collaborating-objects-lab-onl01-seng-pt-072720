@@ -34,7 +34,7 @@ class Artist
   def self.find_or_create_by_name (name)
     if self.all.detect {|temp| temp.name == name}
       self
-    elsif
+    elsif self.all.detect {|temp| temp.name == nil}
       artist = self.new(name)
       artist
     end
