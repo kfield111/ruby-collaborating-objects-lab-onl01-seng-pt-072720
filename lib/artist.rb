@@ -35,7 +35,7 @@ class Artist
     if self.all.detect {|temp| temp.name == name}
       self
     else
-      artist = Artist.new(name)
+      artist = self.new(name)
       artist
     end
   end
