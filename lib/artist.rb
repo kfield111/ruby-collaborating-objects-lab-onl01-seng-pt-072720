@@ -32,13 +32,7 @@ class Artist
 
 
   def self.find_or_create_by_name (name)
-    @@all.select do |temp|
-      if temp.name == name
-        temp
-      else
-        @@all << name = Artist.new(name)
-      end
-    end
+    @@all
   end
 
 
