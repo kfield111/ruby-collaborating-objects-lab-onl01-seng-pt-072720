@@ -8,4 +8,9 @@ def initialize (name)
   @@all_songs << self
 end
 
+
+def self.all?
+  @@all_songs
+end
+
 end
