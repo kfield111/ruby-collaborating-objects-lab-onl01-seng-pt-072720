@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files (path)
-    data = path.chomp(".mp3").split(" - ")
+    filepath = path.chomp(".mp3").split(" - ")
   end
 
 
