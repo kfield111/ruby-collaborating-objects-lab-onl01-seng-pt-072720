@@ -34,7 +34,8 @@ class Artist
       if @@all_artists.include? (temp.name)
         temp
       else
-        temp = Artist.new (temp)  
+        temp = Artist.new (temp)
+      end  
     end
 
 
