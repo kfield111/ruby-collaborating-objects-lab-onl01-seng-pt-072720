@@ -35,7 +35,7 @@ class Artist
     if self.all.detect {|temp| temp.name == name}
       self
     end
-    self
+    name
   end
 
 
