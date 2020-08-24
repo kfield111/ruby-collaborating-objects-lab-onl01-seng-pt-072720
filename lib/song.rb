@@ -28,7 +28,7 @@ def self.new_by_filename (filename)
   song_data << filename.split("-")
   artist = song_data[0]
   title = song_data[1]
-  genre = song_data[2]
+  genre = song_data[2].chomp(".mp3")
   new_song = Song.new(title)
   new_song.artist = artist
   new_song.genre = genre
