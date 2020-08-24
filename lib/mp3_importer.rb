@@ -9,7 +9,7 @@ class MP3Importer
   end
 
   def files
-    filepath = path.split("/")
+    filepath = path.split("/").join
     binding.pry
   end
 
