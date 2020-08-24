@@ -9,7 +9,7 @@ class MP3Importer
   end
 
   def files
-    Dir["spec/fixtures/mp3s/*"].normalize
+    Dir[@path
   end
 
 
