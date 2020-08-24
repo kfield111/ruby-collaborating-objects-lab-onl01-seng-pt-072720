@@ -29,7 +29,10 @@ def self.new_by_filename (filename)
   artist = song_data[0]
   title = song_data[1]
   genere = song_data[2]
-  Song.new(title)
+  new_song = Song.new(title)
+  new_song.artist = artist
+  new_song.genre = genre
+  new_song
 
 
 end
