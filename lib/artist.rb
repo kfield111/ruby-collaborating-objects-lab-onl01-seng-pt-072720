@@ -33,7 +33,7 @@ class Artist
 
   def self.find_or_create_by_name (name)
     if @@all.include?(name)
-      Artist
+      nil
     else
       Artist.new(name)
     end
