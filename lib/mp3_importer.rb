@@ -10,7 +10,6 @@ class MP3Importer
 
   def files
     Dir["spec/fixtures/mp3s/*"
-    binding.pry
   end
 
 
